@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./packages/scss/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Complete seu cadastro</h1>
+        <div class="layoutForm">
+            <form action="save.php" method="POST">
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" class="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" class="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div>
+                    <label for="pass">Senha:</label>
+                    <input type="password" id="pass" class="pass" placeholder="Digite sua nova senha" required>
+                </div>
+
+                <div>
+                    <label for="confirmPass">Confirme sua senha:</label>
+                    <input type="password" id="confirmPass" class="confirmPass" placeholder="Digite sua nova senha"
+                        required>
+                </div>
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" class="cpfForm" type="text" name="cpf" placeholder="Digite seu CPF" maxlength="11"
+                        required pattern="\d{3}\d{3}\d{3}\d{2}">
+                </div>
+        </div>
+        <div id="botao">
+        <button id="enviarForm" onclick="" class="buttonForm1" type="submit">Enviar</button>
+        <button onclick="confirmarDecisao()" class="buttonForm2" type="button">Voltar a tela anterior</button></div>
+
+        </form>
+
+
+    </main>
+
+    <script src="./packages/script/form.js"></script>
+</body>
+
+</html>
