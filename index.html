@@ -9,22 +9,25 @@
 
 </head>
 
-<body >
-    <main>
-        <h1>Login</h1>
-        <p class=codigo>Código </p><input id="codigoDigitado" class="codigoUsuario" name="codigo" maxlength="5"
-            placeholder="Digite seu cógido" required>
+<body>
+    <main class="mainIndex">
+        <div class="loginContent">
+            <p class=codigo>User: </p><input id="idUser" class="codigoUsuario" name="user" maxlength="20"
+                placeholder="Digite seu Usuário" required>
+            <p class=codigo>Código: </p><input id="codigoDigitado" class="codigoUsuario" name="codigo" maxlength="5"
+                placeholder="Digite seu cógido" required>
 
 
-        <div id="botao">
-            <button class="logar" type="submit" value="Logar" onclick="aprovarSenha()">Entrar</button>
-            <button class="gSenha gSenha-lj" onclick="gerarSenha();">Gere seu código aqui</button>
+            <div id="botao">
+                <button class="logar" type="submit" value="Logar" onclick="aprovarSenha()">Entrar</button>
+                <button class="gSenha" onclick="gerarSenha();">Criar uma conta</button>
+            </div>
         </div>
-
 
     </main>
 
     <script src="./packages/script/index.js"> </script>
+    <script src="packages/script/listaUser.js"></script>
 </body>
 
 

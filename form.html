@@ -14,7 +14,7 @@
     <main>
         <h1>Complete seu cadastro</h1>
         <div class="layoutForm">
-            <form action="save.php" method="POST">
+            <form>
 
                 <div>
                     <label for="nome">Nome:</label>
@@ -30,13 +30,6 @@
                     <label for="pass">Senha:</label>
                     <input type="password" id="pass" class="pass" placeholder="Digite sua nova senha" required>
                 </div>
-
-                <div>
-                    <label for="confirmPass">Confirme sua senha:</label>
-                    <input type="password" id="confirmPass" class="confirmPass" placeholder="Digite sua nova senha"
-                        required>
-                </div>
-
                 <div>
                     <label for="cpf">CPF:</label>
                     <input id="cpf" class="cpfForm" type="text" name="cpf" placeholder="Digite seu CPF" maxlength="11"
@@ -44,8 +37,8 @@
                 </div>
         </div>
         <div id="botao">
-        <button id="enviarForm" onclick="" class="buttonForm1" type="submit">Enviar</button>
-        <button onclick="confirmarDecisao()" class="buttonForm2" type="button">Voltar a tela anterior</button></div>
+        <button id="enviarForm" onclick="cadastrarDados()" class="buttonForm1" type="button">Enviar</button>
+        <button onclick="" class="buttonForm2" type="button">Voltar a tela anterior</button></div>
 
         </form>
 
@@ -53,6 +46,7 @@
     </main>
 
     <script src="./packages/script/form.js"></script>
+    <script src="packages/script/listaUser.js"></script>
 </body>
 
 </html>

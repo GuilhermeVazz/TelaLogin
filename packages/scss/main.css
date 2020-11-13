@@ -10,10 +10,10 @@
 }
 
 body {
-  background-color: #494949;
+  background-color: #464646;
 }
 
-main {
+.mainIndex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,55 +21,75 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 8% 0% 0% 10%;
-  padding: 8px 12px;
-  width: 300px;
-  border-radius: 5px;
+  padding: 4rem 5rem;
+  max-width: 400px;
 }
 
-main .codigo {
-  margin-top: 1rem;
-  color: #00ff97;
-  font-size: 35px;
-}
-
-main .codigoUsuario {
-  margin-top: 1rem;
-  border: 1px solid #00ff97;
-  border-radius: 4rem;
+.mainIndex .loginContent {
+  width: 600px;
+  height: 400px;
   padding: 4px 4px;
-  width: 100%;
-  height: 50px;
-  margin-left: 1%;
-  text-align: center;
-  font-size: 25px;
+  border-radius: 3px;
 }
 
-main #botao {
+.mainIndex .bordaGradiente-wrap {
+  height: 392px;
+  background: #464646;
+}
+
+.mainIndex h1 {
+  background: 1px solid #ffc700;
+  background: linear-gradient(31deg, #ffc700 0%, #9aff03 35%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.mainIndex .codigo {
+  background: 1px solid #ffc700;
+  background: linear-gradient(31deg, #ffc700 0%, #9aff03 35%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  margin-top: 5%;
+}
+
+.mainIndex .codigoUsuario {
+  border: none;
+  border-radius: 4rem;
+  padding: 4px 8px;
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #CBCBCB;
+  outline: none;
+}
+
+.mainIndex #botao {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.5rem;
-  width: 100%;
-  margin-left: 1%;
+  width: 50%;
 }
 
-main #botao .logar {
-  color: #00ff97;
+.mainIndex #botao .logar {
+  color: yellowgreen;
   border: 1px;
   border-style: solid;
-  color: #00ff97;
+  color: yellowgreen;
   border-radius: 4rem 0 0 4rem;
   font-weight: bold;
   padding: 4px 4px;
   width: 51%;
   height: 55px;
-  background: #373737;
-  -webkit-transition: background;
-  transition: background;
+  background: transparent;
+  -webkit-transition: transparent;
+  transition: transparent;
   -webkit-transition: width;
   transition: width;
   -webkit-transform-style: initial;
@@ -78,22 +98,22 @@ main #botao .logar {
           transition-duration: .2s;
 }
 
-main #botao .logar:hover {
-  background: #373737;
+.mainIndex #botao .logar:hover {
+  background: transparent;
   width: 106%;
 }
 
-main #botao .gSenha {
-  color: #00ff97;
-  border: 1px solid #00ff97;
+.mainIndex #botao .gSenha {
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
   border-left: 0px;
-  border-radius: 0 4rem  4rem 0;
+  border-radius: 0 4rem 4rem 0;
   width: 55%;
   height: 55px;
-  background: #373737;
+  background: transparent;
   padding: 4px 4px;
-  -webkit-transition: background;
-  transition: background;
+  -webkit-transition: transparent;
+  transition: transparent;
   -webkit-transition: width;
   transition: width;
   -webkit-transform-style: initial;
@@ -102,9 +122,9 @@ main #botao .gSenha {
           transition-duration: .2s;
 }
 
-main #botao .gSenha:hover {
+.mainIndex #botao .gSenha:hover {
   width: 226%;
-  background: #373737;
+  background: transparent;
 }
 
 body {
@@ -132,7 +152,7 @@ html {
 }
 
 main {
-  width: 100%;
+  width: 380px;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,11 +174,21 @@ main {
 }
 
 h1 {
+  background: 1px solid #ffc700;
+  background: linear-gradient(31deg, #ffc700 0%, #9aff03 35%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 6%;
   font-family: 'Nunito', sans-serif;
 }
 
 .layoutForm label {
+  background: 1px solid #ffc700;
+  background: linear-gradient(31deg, #ffc700 0%, #9aff03 35%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'Nunito', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,18 +212,30 @@ h1 {
   outline: none;
   color: black;
   text-align: center;
+  width: 300px;
+  height: 45px;
 }
 
 #botao {
-  width: 100%;
+  background: 1px solid #ffc700;
+  background: linear-gradient(31deg, #ffc700 0%, #9aff03 35%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 305px;
+  margin-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.buttonForm1 {
+#botao .buttonForm1 {
   font-family: 'Nunito', sans-serif;
-  background: #373737;
+  font-size: 20px;
+  background: transparent;
   margin-top: 2%;
   border: 1px solid;
-  border-color: #00ff97;
+  border-color: yellowgreen;
   border-radius: 4rem 0 0 4rem;
   line-height: 1.5rem;
   padding: 4px 4px;
@@ -210,27 +252,36 @@ h1 {
           transition-duration: .2s;
 }
 
-.buttonForm1:hover {
-  width: 126%;
-  background: #373737;
+#botao .buttonForm1:hover {
+  width: 90%;
+  background: transparent;
 }
 
-.buttonForm2 {
+#botao .buttonForm2 {
   font-family: 'Nunito', sans-serif;
-  background: #373737;
+  font-size: 15px;
+  background: transparent;
   margin-top: 2%;
   border: 1px solid;
-  border-color: #00ff97;
+  border-color: yellowgreen;
   border-radius: 0 4rem 4rem 0;
   line-height: 1.5rem;
   padding: 4px 4px;
   outline: none;
   width: 50%;
   height: 55px;
+  -webkit-transition: background;
+  transition: background;
+  -webkit-transition: width;
+  transition: width;
+  -webkit-transform-style: initial;
+          transform-style: initial;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
-.buttonForm2:hover {
-  width: 126%;
-  background: #373737;
+#botao .buttonForm2:hover {
+  width: 90%;
+  background: transparent;
 }
 /*# sourceMappingURL=main.css.map */
